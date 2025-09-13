@@ -147,7 +147,7 @@ class ZoomScraper:
         try:
             inputs = self.driver.find_elements(By.TAG_NAME, "input")
             print(f"Inputs encontrados: {len(inputs)}")
-            for i, input_elem in enumerate(inputs[:5]):  # Mostrar apenas os primeiros 5
+            for i, input_elem in enumerate(inputs[:5]):
                 try:
                     input_type = input_elem.get_attribute("type") or "sem tipo"
                     placeholder = input_elem.get_attribute("placeholder") or "sem placeholder"
